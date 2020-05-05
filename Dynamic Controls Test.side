@@ -1,0 +1,344 @@
+{
+  "id": "b6175258-2b82-4284-a6fb-060e771e48ce",
+  "version": "2.0",
+  "name": "Dynamic Controls Test",
+  "url": "http://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "c132adb3-d432-4e58-abc8-282331b49e6d",
+    "name": "TC1-DControls",
+    "commands": [{
+      "id": "e47e3fa5-494d-4394-9a48-41800c0ac7db",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3657ea45-67d7-48d6-9d71-73534373f4fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dynamic Controls",
+      "targets": [
+        ["linkText=Dynamic Controls", "linkText"],
+        ["css=li:nth-child(13) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dynamic Controls')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dynamic_controls')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dynamic Controls')]", "xpath:innerText"]
+      ],
+      "value": "Dynamic Controls"
+    }, {
+      "id": "58872ab9-149f-4b9e-a6f2-e80cd5c2594c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=checkbox",
+      "targets": [],
+      "value": "A checkbox"
+    }, {
+      "id": "cfe09a07-08a9-437b-ac6c-dd9b06d88148",
+      "comment": "",
+      "command": "check",
+      "target": "css=#checkbox > input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d848944-0aaf-443a-a262-cd4d3e016470",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='checkbox-example']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": "Remove"
+    }, {
+      "id": "f1ecdb76-7774-48f4-b256-5ef3a5627c00",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//form[@id='checkbox-example']/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b1bf2f16-8102-4fc6-bf82-8eb71938e080",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "It's gone!"
+    }, {
+      "id": "b827d3a2-e0d5-4277-8e9f-b558bc5d2de4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button:nth-child(1)",
+      "targets": [],
+      "value": "Add"
+    }, {
+      "id": "4994400f-07bd-4d0a-98b8-e418f02758a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='checkbox-example']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": "Add"
+    }, {
+      "id": "bdb04a5d-af77-48a6-bc6c-c548915f0c60",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "787972a1-6fc1-4070-898a-001d9f4f8f9e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//form[@id='checkbox-example']/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"]
+      ],
+      "value": "It's back!"
+    }, {
+      "id": "7a2ad3e0-0726-4039-80a0-46014aaf28e4",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0155bd5f-30da-4dcd-ae2c-86afb0124618",
+    "name": "TC2-DControls",
+    "commands": [{
+      "id": "a5c5a0d6-171c-466b-b85b-cae9a612990e",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "239fa57e-fa8d-46bd-b472-b5b3d800391e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dynamic Controls",
+      "targets": [
+        ["linkText=Dynamic Controls", "linkText"],
+        ["css=li:nth-child(13) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dynamic Controls')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dynamic_controls')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dynamic Controls')]", "xpath:innerText"]
+      ],
+      "value": "Dynamic Controls"
+    }, {
+      "id": "cc595617-f681-4468-9062-e44cf24f62e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#input-example > button",
+      "targets": [
+        ["css=#input-example > button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='input-example']/button", "xpath:idRelative"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enable')]", "xpath:innerText"]
+      ],
+      "value": "Enable"
+    }, {
+      "id": "26b991df-9620-4fb8-99ad-cfcf603d6c40",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#input-example > button",
+      "targets": [
+        ["css=#input-example > button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='input-example']/button", "xpath:idRelative"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Disable')]", "xpath:innerText"]
+      ],
+      "value": "Disable"
+    }, {
+      "id": "55d17734-6881-4f64-9876-7a7e37a46e37",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "fd0d7bbb-4fce-463d-9418-c207ad78fee0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "It's enabled!"
+    }, {
+      "id": "b72a9a77-bd71-482b-a4b3-8e7a5bdcd978",
+      "comment": "",
+      "command": "click",
+      "target": "css=#input-example > button",
+      "targets": [
+        ["css=#input-example > button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='input-example']/button", "xpath:idRelative"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Disable')]", "xpath:innerText"]
+      ],
+      "value": "Disable"
+    }, {
+      "id": "0dcc48fd-50dc-40d8-a729-cc71154fb507",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#input-example > button",
+      "targets": [],
+      "value": "Enable"
+    }, {
+      "id": "e8b6676f-e4ae-4899-aa9f-c817a1b3db1d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "5b493656-e1f5-405b-8faa-28d1f455d990",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//form[@id='input-example']/p", "xpath:idRelative"],
+        ["xpath=//form[2]/p", "xpath:position"]
+      ],
+      "value": "It's disabled!"
+    }, {
+      "id": "28ba2ec4-c100-4f97-898c-60ab17b836de",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4037c494-5007-4055-b7c7-0c04847b295d",
+    "name": "TC3-DControls",
+    "commands": [{
+      "id": "a5a4962f-86b0-4517-b5ad-cacf60fc2c2a",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f91159c-4ee9-48b7-8f11-98421001ab92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dynamic Controls",
+      "targets": [],
+      "value": "Dynamic Controls"
+    }, {
+      "id": "74d3fff2-1c9a-4e37-9fa8-f527859c75e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=checkbox",
+      "targets": [],
+      "value": "A checkbox"
+    }, {
+      "id": "85d38431-5ec5-42da-8553-68f1e0917fc1",
+      "comment": "",
+      "command": "check",
+      "target": "css=#checkbox > input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c61b789d-99ee-4592-8424-9cfa41a30f0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#checkbox-example > button",
+      "targets": [
+        ["css=#checkbox-example > button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='checkbox-example']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": "Remove"
+    }, {
+      "id": "1f93fa7f-bd4f-4deb-ba8a-158ef43362b0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "be127379-40c2-4ee1-9463-143e28d82fc7",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "It's gone!"
+    }, {
+      "id": "20a7c132-e526-47ba-952e-33f75d34bf75",
+      "comment": "",
+      "command": "click",
+      "target": "css=#input-example > button",
+      "targets": [],
+      "value": "Enable"
+    }, {
+      "id": "2eda5143-45e1-46a9-a601-f7acf4927c85",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#input-example > button",
+      "targets": [],
+      "value": "Disable"
+    }, {
+      "id": "acf72c8b-d305-4a3a-9af3-11abf3020766",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=message",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "af1faca5-aec0-4d05-ae86-4ab83c9fcf62",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "It's enabled!"
+    }, {
+      "id": "d7ae7762-1f3f-43bb-858d-6f00b9ba7890",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a5cf0187-90fc-4cb1-bbae-d6ffadd72fef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c132adb3-d432-4e58-abc8-282331b49e6d"]
+  }],
+  "urls": ["http://the-internet.herokuapp.com/"],
+  "plugins": []
+}

@@ -1,0 +1,450 @@
+{
+  "id": "68fa9715-0a97-45dc-be9c-2e1cf04cde9a",
+  "version": "2.0",
+  "name": "Checkboxes test",
+  "url": "http://the-internet.herokuapp.com",
+  "tests": [{
+    "id": "43ed6f1d-a0cb-4071-927a-2ecf67764267",
+    "name": "TC1-checkboxes",
+    "commands": [{
+      "id": "d0c03ca2-f785-497c-af94-447419027be0",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "660412a2-0a4f-4e47-a229-9a1b158606b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "6d571a64-b03f-43f9-88df-036f061d356a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Checkboxes"
+    }, {
+      "id": "404bda3a-97bb-4666-bbf3-e5c4f23ade36",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "checkbox 1"
+    }, {
+      "id": "4ec262c2-4c8f-40d6-8f76-b74e444bb86d",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["id=checkboxes", "id"],
+        ["css=#checkboxes", "css:finder"],
+        ["xpath=//form[@id='checkboxes']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "checkbox 1"
+    }, {
+      "id": "4b762dc8-3f6f-4452-b348-f0d0c7384e1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [],
+      "value": "checkbox 1"
+    }, {
+      "id": "ee828fb9-ff4c-4a06-9269-d81356a4d04a",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "css=input:nth-child(1)",
+      "targets": [],
+      "value": "checkbox 1"
+    }, {
+      "id": "7fffedae-a9e4-4d9b-9eda-fd1b1fe35f25",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "94f3b3e4-4857-4047-9f5e-8a53b33e789d",
+    "name": "TC2-checkboxes",
+    "commands": [{
+      "id": "e112349a-bf7a-4f48-9e89-fc82fd69fec2",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38aa1c45-f995-4241-b115-59e223d6f4ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "c716d83e-3c93-40c4-9a19-892fb4715fe0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Checkboxes"
+    }, {
+      "id": "43413792-5be1-4f26-bb63-4c13b38a1bda",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "checkbox 2"
+    }, {
+      "id": "f5191e7b-256a-436b-8d67-2b373aba4c6e",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "css=input:nth-child(3)",
+      "targets": [],
+      "value": "checkbox 2"
+    }, {
+      "id": "16fded1f-c441-4353-ad50-4e035cc0eee9",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [],
+      "value": "checkbox 2"
+    }, {
+      "id": "e23861f0-4b6b-49f3-a98d-e1363eef7c95",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=input:nth-child(3)",
+      "targets": [],
+      "value": "checkbox 2"
+    }, {
+      "id": "dac8683b-bc8f-4a8a-8baa-16053953ac37",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0bc069cb-c72d-40a8-ba70-631d3edf6ab6",
+    "name": "TC3-checkboxes",
+    "commands": [{
+      "id": "a70051da-dd18-45ca-afbc-14c68057dcba",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8440768-0878-4e2a-9318-5449899e16d9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "33f901bb-7f6e-4367-90d7-2e3cb5cdbd37",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Checkboxes"
+    }, {
+      "id": "cb79f1ed-3b80-4470-aaf4-9348af12ed20",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "checkbox 1"
+    }, {
+      "id": "ae40802a-c4fd-4164-b009-2c935448b567",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=input:nth-child(1)",
+      "targets": [],
+      "value": "checkbox 1"
+    }, {
+      "id": "e7b7848a-e305-4e04-a6f2-830280d60376",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "checkbox 2"
+    }, {
+      "id": "70a4a030-a655-4dd3-b66d-56b0991dd0e3",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "css=input:nth-child(3)",
+      "targets": [],
+      "value": "checkbox 2"
+    }, {
+      "id": "46d8f6a8-ee19-46b0-8504-2bb0bbb65566",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9edd1e2b-0452-4a6e-baf5-56bf070618eb",
+    "name": "TC5-checkboxes",
+    "commands": [{
+      "id": "45cec51e-cb70-4a55-91dc-87bc41cddbeb",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb8881b2-bceb-47ab-8a28-263691c8f805",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "17e64fd9-9c5e-40f1-87ac-b75bbda04d18",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Checkboxes"
+    }, {
+      "id": "bdfe52c5-863c-4f97-aa6d-30ff53036244",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "checkbox 2"
+    }, {
+      "id": "841d85e9-7779-409e-a649-5c67af789a6e",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "css=input:nth-child(3)",
+      "targets": [],
+      "value": "checkbox 2"
+    }, {
+      "id": "f9e9100e-6fd9-499e-aea2-7e5341a0439e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f542039a-cc36-48cf-a64d-a7d13fd8d53a",
+    "name": "TC6-checkboxes",
+    "commands": [{
+      "id": "15cf13bf-2507-4c28-b51f-92d83999993f",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9a39871-8443-4d94-bdf3-d95c8742d502",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "b5a3802b-b2df-4004-945a-e771e7701d4f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='content']/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "a4f4653f-42e9-4986-8332-171aa80c72a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "checkbox 1"
+    }, {
+      "id": "0c0fe9e1-4d6d-436a-b0d3-be9a4ac19bde",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=input:nth-child(1)",
+      "targets": [],
+      "value": "checkbox 1"
+    }, {
+      "id": "05f38cd3-39c2-4c7c-b6a8-3564fc5e4d2a",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e18ef95d-c46d-4c6a-bd44-3394e81d30c8",
+    "name": "TC4-checkboxes",
+    "commands": [{
+      "id": "21a601c7-3277-48be-92ac-48e53362f01c",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76f2533b-56b2-4e46-9b99-9b25c11d205b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": "Checkboxes"
+    }, {
+      "id": "a86eb3b5-1d87-4e35-81b9-d4cc22872968",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Checkboxes"
+    }, {
+      "id": "9871dccd-fc18-48d4-a47a-32ba658e87c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["id=checkboxes", "id"],
+        ["css=#checkboxes", "css:finder"],
+        ["xpath=//form[@id='checkboxes']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "checkbox 2"
+    }, {
+      "id": "4a1e7cb4-8b9f-4215-a0bf-dc8c83dd4391",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "css=input:nth-child(3)",
+      "targets": [],
+      "value": "checkbox 2"
+    }, {
+      "id": "d08ea0be-1bef-4848-8ae0-c0563cb1278e",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["id=checkboxes", "id"],
+        ["css=#checkboxes", "css:finder"],
+        ["xpath=//form[@id='checkboxes']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "checkbox 1"
+    }, {
+      "id": "e2086d5d-69eb-460f-9f18-4ca483e35747",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=input:nth-child(1)",
+      "targets": [],
+      "value": "checkbox 1"
+    }, {
+      "id": "f6dffc6e-da22-4101-b89f-8ab0b538e8c7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0db8d96e-71b0-43fc-b006-50a596c1c408",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["43ed6f1d-a0cb-4071-927a-2ecf67764267"]
+  }],
+  "urls": ["http://the-internet.herokuapp.com/"],
+  "plugins": []
+}

@@ -1,0 +1,110 @@
+{
+  "id": "f65311ee-0332-4cd0-9ee2-92b9fb446d61",
+  "version": "2.0",
+  "name": "Key Presses Test",
+  "url": "http://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "bdc10d50-be1a-4873-ab5d-1f3dc6a3ba67",
+    "name": "TC1-KP",
+    "commands": [{
+      "id": "ab31663e-eb92-4f00-8a0e-8e0873035ba0",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a17528b6-da06-4f8b-8b39-0bd7c8850926",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Key Presses",
+      "targets": [
+        ["linkText=Key Presses", "linkText"],
+        ["css=li:nth-child(31) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Key Presses')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[31]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/key_presses')]", "xpath:href"],
+        ["xpath=//li[31]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Key Presses')]", "xpath:innerText"]
+      ],
+      "value": "Key Presses"
+    }, {
+      "id": "58f82846-d809-4138-8698-657650201dff",
+      "comment": "",
+      "command": "click",
+      "target": "id=target",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c0e8ff6-b8e5-4004-aaca-e78e26e61f73",
+      "comment": "",
+      "command": "type",
+      "target": "id=target",
+      "targets": [],
+      "value": "t"
+    }, {
+      "id": "c18917e5-6df2-4fe6-8333-7533efb52ff6",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "You entered: T"
+    }, {
+      "id": "5e80daa2-dc13-4553-b8d9-51cfd51ea03c",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "042c49f2-e633-4bbc-9f35-b037ba5defe8",
+    "name": "TC2-KP",
+    "commands": [{
+      "id": "f8b7b874-258d-46e6-8f24-1f500827d68b",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "847eabe8-7cff-4dc6-b1ce-fab7499c9fca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Key Presses",
+      "targets": [],
+      "value": "Key Presses"
+    }, {
+      "id": "38c8448c-40f4-4044-92da-01a293a467fc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=target",
+      "targets": [],
+      "value": "${KEY_LEFT}"
+    }, {
+      "id": "1ff31361-c7da-411c-83b9-1ce8f096f30e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "You entered: LEFT"
+    }, {
+      "id": "7ec868ab-25d0-468c-8a17-b35c57ea0cdd",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f52d4264-109a-4b8d-a378-3966471f2172",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bdc10d50-be1a-4873-ab5d-1f3dc6a3ba67"]
+  }],
+  "urls": ["http://the-internet.herokuapp.com/"],
+  "plugins": []
+}

@@ -1,0 +1,92 @@
+{
+  "id": "1ae504d7-2809-4695-b276-1543cb4e3e4e",
+  "version": "2.0",
+  "name": "Dynamic Content Test",
+  "url": "http://the-internet.herokuapp.com/dynamic_content",
+  "tests": [{
+    "id": "9d4b6a11-6265-44f2-a362-aff36e0c3354",
+    "name": "TC1-DC",
+    "commands": [{
+      "id": "b69b8112-8cfd-4a73-a384-e91db7a70ae0",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/dynamic_content",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bef68c35-3bac-482f-8851-04bf08c0b4d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=click here",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad2cdb40-0977-4858-8b20-5387ad5cc4fe",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(1) img",
+      "targets": [],
+      "value": "src=\"/img/avatars/Original-Facebook-Geek-Profile-Avatar-7.jpg\""
+    }, {
+      "id": "315dd351-9c8f-4793-a025-28ff4630d4c9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.row:nth-child(1)",
+      "targets": [],
+      "value": "Accusantium eius ut architecto neque vel voluptatem vel nam eos minus ullam dolores voluptates enim sed voluptatem rerum qui sapiente nesciunt aspernatur et accusamus laboriosam culpa tenetur hic aut placeat error autem qui sunt."
+    }, {
+      "id": "3fcc1b21-ccc2-46be-af88-1d86bf666465",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(4) img",
+      "targets": [],
+      "value": "src=\"/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg\""
+    }, {
+      "id": "a2b5198e-3ed7-45e4-ac66-6c6e895d2742",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.row:nth-child(4)",
+      "targets": [],
+      "value": "Omnis fugiat porro vero quas tempora quis eveniet ab officia cupiditate culpa repellat debitis itaque possimus odit dolorum et iste quibusdam quis dicta autem sint vel quo vel consequuntur dolorem nihil neque sunt aperiam blanditiis."
+    }, {
+      "id": "0c640dd0-fc27-46d9-80f9-fc209308b8fb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(7) > .large-2 > img",
+      "targets": [
+        ["css=.row:nth-child(7) > .large-2 > img", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div/img", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/img", "xpath:position"]
+      ],
+      "value": "src=\"/img/-\""
+    }, {
+      "id": "ce7c695e-b003-496e-9843-e0ac3adc6834",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "xpath=//div[@id='content']/div[3]",
+      "targets": [
+        ["css=#content > .row:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bf43224-cc7e-43ca-b65b-717a4a89faa8",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ad4f4d56-004c-45ff-972c-ecb8c680a523",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://the-internet.herokuapp.com/", "http://the-internet.herokuapp.com/dynamic_content"],
+  "plugins": []
+}

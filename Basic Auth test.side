@@ -1,0 +1,123 @@
+{
+  "id": "f3c11c23-6c62-40d8-82a1-051e1b0c09ce",
+  "version": "2.0",
+  "name": "Basic Auth test",
+  "url": "http://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "3b70a5d8-5d04-4821-a2da-0466d9aad188",
+    "name": "TC1-BA",
+    "commands": [{
+      "id": "81148e91-31af-4e9c-9859-f27fdc2d688e",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1861b482-5cb8-459a-8bbc-f13d89f0e654",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Basic Auth",
+      "targets": [
+        ["linkText=Basic Auth", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Basic Auth')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/basic_auth')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Basic Auth')]", "xpath:innerText"]
+      ],
+      "value": "Basic Auth (user and pass: admin)"
+    }, {
+      "id": "c50aed7f-d1d3-4e15-b765-bf37d1da38e8",
+      "comment": "",
+      "command": "open",
+      "target": "http://admin:admin@the-internet.herokuapp.com/basic_auth",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0895ff20-c3aa-4036-abf5-a8d5d9db855e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//div[@id='content']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Congratulations! You must have the proper credentials.')]", "xpath:innerText"]
+      ],
+      "value": "Congratulations! You must have the proper credentials."
+    }, {
+      "id": "bfe766f7-3763-4e91-afb5-f8f65458f794",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "69639f68-5e39-415c-8105-6fb652973723",
+    "name": "TC2-BA",
+    "commands": [{
+      "id": "db56004b-eddc-4466-83da-3501eaee3887",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a17743a4-479d-45c1-b11b-7409dde24209",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Basic Auth",
+      "targets": [
+        ["linkText=Basic Auth", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Basic Auth')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/basic_auth')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Basic Auth')]", "xpath:innerText"]
+      ],
+      "value": "Basic Auth (user and pass: admin)"
+    }, {
+      "id": "0aad3955-516e-4a11-9965-37ba0247303f",
+      "comment": "",
+      "command": "open",
+      "target": "http://@the-internet.herokuapp.com/basic_auth",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "012419d0-760c-46ed-bb3b-4e95c6cf20ca",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=body",
+      "targets": [],
+      "value": "Cancel"
+    }, {
+      "id": "efd92ded-9f64-4c59-bfe0-b3068e5d8238",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [],
+      "value": "Not authorized"
+    }, {
+      "id": "20aab8ae-7800-41b5-99a3-98f8752cd6cb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b32e9254-95c7-42bc-b589-fb9a8c04bbe5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3b70a5d8-5d04-4821-a2da-0466d9aad188"]
+  }],
+  "urls": ["http://the-internet.herokuapp.com/"],
+  "plugins": []
+}

@@ -1,0 +1,234 @@
+{
+  "id": "85ca72b1-c17b-43b9-8b62-0a543ccf0f42",
+  "version": "2.0",
+  "name": "Hovers test",
+  "url": "http://the-internet.herokuapp.com/hovers",
+  "tests": [{
+    "id": "59f9b563-4d51-49a6-8d0c-873c094b9de6",
+    "name": "TC1-hovers",
+    "commands": [{
+      "id": "412cc624-86da-461f-9e02-e3ca54370362",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/hovers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6553694e-9426-4812-8799-beba3b61dfeb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.figure:nth-child(3) > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc19eb09-83fe-4fd0-bd22-80ab6ce33152",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.figure:nth-child(3) h5",
+      "targets": [],
+      "value": "name: user1"
+    }, {
+      "id": "510b6174-f34b-4470-822d-7b8a6cefcb7e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'View profile')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/1')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View profile')]", "xpath:innerText"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "1ba008e0-8652-4e74-96c8-66674e99db0f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=View profile",
+      "targets": [],
+      "value": "View profile"
+    }, {
+      "id": "daf3099b-3afe-4f5f-96c3-da57399d9ef9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'View profile')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/1')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View profile')]", "xpath:innerText"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "b1f85f37-5e27-4af1-915c-96d9b554c0d7",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c78ef1af-2280-49e0-bfec-b17792d12140",
+    "name": "TC2-hovers",
+    "commands": [{
+      "id": "3d9e26b5-717d-4e5d-b913-d6bb9864aa7a",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/hovers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bcf3f72-5e4c-459d-aa94-3e98f265c122",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.figure:nth-child(4) > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d23e523-321c-47c9-89d5-7a1b6db5ff94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.figure:nth-child(4) h5",
+      "targets": [],
+      "value": "name: user2"
+    }, {
+      "id": "1d972ee0-5c9e-4a02-9af5-0ee603e8cb42",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(4) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View profile')])[2]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/2')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "67eb4fa0-248b-40ec-84c3-6906a89db761",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(4) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View profile')])[2]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/2')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "8914062a-7a38-40a2-b366-83a513731f6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(4) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View profile')])[2]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/2')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "722f99ab-ff3d-4a18-b570-7d1bf5f82eee",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9592c6ad-b929-4315-9c1d-5e71717858ca",
+    "name": "TC3-hovers",
+    "commands": [{
+      "id": "e6dbd7ba-617b-4b29-ad92-f3d420bf8190",
+      "comment": "",
+      "command": "open",
+      "target": "http://the-internet.herokuapp.com/hovers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9632e00-cd5d-4931-bef8-73ef662656c5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.figure:nth-child(5) > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df60ef92-fb3d-484f-b95f-b56d06e6f23e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.figure:nth-child(5) h5",
+      "targets": [],
+      "value": "name: user3"
+    }, {
+      "id": "83378e34-b569-4893-858f-4eb4cbc4674d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(5) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View profile')])[3]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/3')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "26a25e74-466d-4a82-a051-4121bb00d53a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(5) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View profile')])[3]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/3')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": "View profile"
+    }, {
+      "id": "240c593c-ac52-48e6-ae37-a78896e083da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View profile",
+      "targets": [
+        ["linkText=View profile", "linkText"],
+        ["css=.figure:nth-child(5) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View profile')])[3]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/users/3')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94298874-66be-49cb-9694-bfce7fedeea6",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "582ce4a4-a8c4-4226-96ae-7ffca03508c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["59f9b563-4d51-49a6-8d0c-873c094b9de6"]
+  }],
+  "urls": ["http://the-internet.herokuapp.com/hovers"],
+  "plugins": []
+}
